@@ -1,0 +1,30 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 do 7DaysOfcode</title>
+</head>
+<body>
+<h1>Clique para cadastrar.</h1>
+<button onclick="myFunction()">Clique aqui</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction()
+    {
+    let x;
+
+    let idade=prompt("Digite sua idade:");
+    let nome=prompt("Digite seu nome:");
+    let linguagem = prompt("Qual linguagem de programação você está estudando?");
+    if (idade!=null && nome!=null)
+    {
+        x="Olá " + nome + " você tem " + idade + " anos e já tá aprendendo " + linguagem + "!";
+        
+        document.getElementById("demo").innerHTML=x;
+        }
+    }
+</script>
+</body>
+</html>
