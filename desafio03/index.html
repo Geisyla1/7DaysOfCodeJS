@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let X;
+        let area = prompt("Você quer seguir no Front-end ou no Back-end?");
+        let linguagem ="";
+        if(area == 'Front-end'){
+            let x = linguagem;
+            document.getElementById("demo").innerHTML=x;
+            linguagem = prompt("Você quer aprender React ou vue?");
+           document.getElementById("demo").innerHTML= x;
+        } else if(area == 'Back-end'){
+            let x = linguagem;
+            document.getElementById("demo").innerHTML= x;
+            linguagem = prompt("Você quer estudar C# ou java");
+           document.getElementById("demo").innerHTML= x;
+        }
+        let Novas_escolhas = prompt("você vai querer continuar especializando ou ser FullSrack?");
+        if(Novas_escolhas== 1){
+            alert(`ual nossa que legal em! você tem que aprender ${linguagem} para ser ${area}`);
+        }else if(Novas_escolhas== 2){
+            alert(`Chegou a hora de começar a aprender outras linguagens além de ${linguagem} se você quer se tornar Fullstack!`);
+        }
+        let outrasTecnologias = prompt("Tem mais alguma tecnologia que você gostaria de aprender?Digite (OK)");
+        while(outrasTecnologias ==="OK"){
+            let tecnologia = prompt(`Qual tecnologia, você gostaria de estudar?`);
+            alert(`${tecnologia} é legal!!`);
+            outrasTecnologias = prompt("Tem mais alguma tecnologia que você gostaria de aprender?Digite(OK)");
+        }
+        alert(`Muito obrigado por responder esse pequeno questionário!`)
+        /*
+            O USUÁRIO ELE TEM QUE DIGITAR QUAIS TECNOLOGIAS ELE QUER APRENDER PARA SER FULLSTACK
+            TEM QUE TER UMA CONDIÇÃO QUE DIZ ENQUANTO ELE APERTAR ALGUMA COISA TEM QUE APARECER A MENSAGEM PERGUNTANDO QUAL TECNOLOGIA ELE QUER;
+        */
+      
+    </script>
+</body>
+</html>
